@@ -38,7 +38,7 @@ Where K, A, and B are positive constants, and the system is stable.
 
 You can install all required packages using:
 ```
-pip install numpy control matplotlib
+pip install -r requirements.txt
 
 ```
 
@@ -50,6 +50,10 @@ pip install numpy control matplotlib
 Navigate to the script directory in your terminal and run the scripts as follows:
 ```bash
 python filename.py
+```
+Example
+```bash
+python SecondPID.py
 ```
 
 ## Conclusion
