@@ -3,7 +3,8 @@ import control as ctl
 import matplotlib.pyplot as plt
 
 def calculate_controller_parameters(K, T, Td, ωc):
-    # Calculate Kp using the given formula (equation 46)
+    if K <= 0 or T <= 0 or Td <= 0 or ωc <= 0:
+        raise ValueError("All parameters must be positive.")
     Kp = ωc * np.sqrt(1 + T**2 * ωc**2) / (K * np.sqrt(1 + Td**2 * ωc**2))
     return Kp
 
