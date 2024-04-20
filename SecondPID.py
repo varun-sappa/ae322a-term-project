@@ -28,7 +28,7 @@ def validate_pid_parameters(K, A, B, Kp, Ti, Td, ωc):
             raise ValueError("Parameter Td does not satisfy the required inequality.")
 
     except ValueError as error:
-        print(error)
+        # print(error)
         return False
     
     return True

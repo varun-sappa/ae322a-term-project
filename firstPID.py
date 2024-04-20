@@ -22,15 +22,16 @@ def validate_parameters(Kp, Ti, K, T, Td):
     try:
         # Validate conditions for controller stability and performance
         if not (0 < Td <= T) or Kp <= 0 or Ti <= 0:
-            raise ValueError("Inequality (17a) not satisfied.")
+            raise ValueError(f"Inequality not satisfied: 0 < Td <= T, Kp > 0, and Ti > 0.")
         if not (Ti >= 2 * K * Kp * T / (1 + 2 * Kp)):
-            raise ValueError("Inequality (17b) not satisfied.")
+            raise ValueError(f"Inequality not satisfied: Ti >= 2 * K * Kp * T / (1 + 2 * Kp).")
         if not (Ti >= 2 * T * Td * (T + K * Kp * Td) / ((T - Td) * (T + Td + 2 * K * Kp * Td))):
-            raise ValueError("Inequality (17c) not satisfied.")
+            raise ValueError(f"Inequality not satisfied: Ti >= 2 * T * Td * (T + K * Kp * Td) / ((T - Td) * (T + Td + 2 * K * Kp * Td)).")
     except ValueError as e:
         print(e)
         return False
     return True
+
 
 def plot_response(K, T, Td, ωc):
     Kp, Ti = compute_parameters(K, T, Td, ωc)
