@@ -60,6 +60,7 @@ Where K, A, and B are positive constants, and the system is stable.
     <img src="src/Screenshot from 2024-04-22 14-09-40.png" alt="Image">
     <figcaption align="center">Python program interface and output </figcaption>
 </figure>
+
 ## Dependencies
 
 - Python 3.8 or higher
