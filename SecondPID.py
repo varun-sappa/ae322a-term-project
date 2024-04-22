@@ -79,7 +79,7 @@ def main():
         print("Selected Ti:", selected_Ti)
 
         plant = ctl.tf([K], [1, A, B])
-        controller = ctl.tf([selected_Kp * selected_Ti, selected_Kp], [selected_Ti, 0])
+        controller = ctl.tf([selected_Kp * selected_Ti*Td,selected_Kp * selected_Ti, selected_Kp], [selected_Ti, 0])
         system = ctl.feedback(controller * plant)
 
         print("Plant Transfer Function:", plant)

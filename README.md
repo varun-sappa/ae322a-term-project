@@ -1,6 +1,6 @@
 # Non-overshooting PD and PID Controllers Design
 
-This repository hosts Python scripts developed to implement the methodologies presented in the paper "Non-overshooting PD and PID controllers design" by Mohammad Tabatabaei & Reza Barati-Boldaji. These scripts simulate the behavior of controllers for specific system types to ensure non-overshooting step responses.
+This repository hosts Python scripts developed to implement the methodologies presented in the paper "Non-overshooting PD and PID controllers design". These scripts simulate the behavior of controllers for specific system types to ensure non-overshooting step responses.
 
 ## Scripts Overview
 
@@ -15,12 +15,33 @@ Implements the non-overshooting PID controller design for first-order systems. I
 G(s) = K / (1 + Ts)  
 Where K>0 (gain) and T>0 (time constant).
 
+<figure>
+    <img src="src/Figure_2.png" alt="Image">
+    <figcaption align="center">Step Response of the system </figcaption>
+</figure>
+
+<figure>
+    <img src="src/Screenshot from 2024-04-22 13-00-49.png" alt="Image">
+    <figcaption align="center">Python program interface and output </figcaption>
+</figure>
+
 ### Script SecondPD.py
 Focuses on PD controller design for integrating systems, performing similar computations and validations tailored to the characteristics of such systems.
 
 **Sample Plant Function:**
 G(s) = K / (s(1 + Ts))  
 Where K>0 (gain) and T>0 (time constant).
+
+
+<figure>
+    <img src="src/Figure_1.png" alt="Image">
+    <figcaption align="center">Step Response of the system </figcaption>
+</figure>
+
+<figure>
+    <img src="src/Screenshot from 2024-04-22 13-01-34.png" alt="Image">
+    <figcaption align="center">Python program interface and output</figcaption>
+</figure>
 
 ### Script SecondPID.py
 Handles the more complex scenario of non-overshooting PID controller design for second-order systems, ensuring robustness and no overshoot through rigorous parameter validation.
@@ -29,6 +50,16 @@ Handles the more complex scenario of non-overshooting PID controller design for 
 G(s) = K / (s^2 + As + B)  
 Where K, A, and B are positive constants, and the system is stable.
 
+
+<figure>
+    <img src="src/Figure_3.png" alt="Image">
+    <figcaption align="center">Step Response of the system </figcaption>
+</figure>
+
+<figure>
+    <img src="src/Screenshot from 2024-04-22 14-09-40.png" alt="Image">
+    <figcaption align="center">Python program interface and output </figcaption>
+</figure>
 ## Dependencies
 
 - Python 3.8 or higher
@@ -55,6 +86,8 @@ Example
 ```bash
 python SecondPID.py
 ```
+
+You'll need to then enter the parameters as asked by the python script.
 
 ## Conclusion
 
