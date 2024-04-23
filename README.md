@@ -1,6 +1,6 @@
 # Non-overshooting PD and PID Controllers Design
 
-This repository hosts Python scripts developed to implement the methodologies presented in the paper "Non-overshooting PD and PID controllers design". These scripts simulate the behavior of controllers for specific system types to ensure non-overshooting step responses.
+This repository hosts Python scripts developed to implement the methodologies presented in the paper "Non-overshooting PD and PID controllers design for First And Second Order Closed Loop Systems". These scripts simulate the behavior of controllers for specific system types to ensure non-overshooting step responses.
 
 ## Scripts Overview
 
