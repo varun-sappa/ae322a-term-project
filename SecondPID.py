@@ -98,5 +98,7 @@ def main():
     else:
         print("No valid ωc found. Try adjusting the range or parameters.")
 
+
+
 if __name__ == "__main__":
     main()

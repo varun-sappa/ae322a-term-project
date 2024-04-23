@@ -67,6 +67,7 @@ Where K, A, and B are positive constants, and the system is stable.
 - NumPy
 - control
 - Matplotlib
+- Ipywidgets
 
 You can install all required packages using:
 ```
@@ -87,8 +88,13 @@ Example
 ```bash
 python SecondPID.py
 ```
-
 You'll need to then enter the parameters as asked by the python script.
+
+
+### Visualizer
+
+In our project, we've included a Jupyter Notebook titled `visualizer.ipynb`. This notebook provides an interactive visualization of step responses, allowing us to observe how changing parameter values impacts the system dynamics. Simply adjust the values using the interactive sliders to see the real-time changes in the visualizations.
+
 
 ## Conclusion
 
